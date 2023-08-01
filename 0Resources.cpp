@@ -10,8 +10,6 @@ https://search.arduino.cc/search?q=arduino%20uno%20r3&tab=projecthub
 
 Уроки Arduino #2 - работа с монитором COM порта  https://www.youtube.com/watch?v=gmgw6nLgzbY
 
-
-
 */
 
 
@@ -23,11 +21,8 @@ https://www.youtube.com/watch?v=fJWR7dBuc18
         https://www.arduino.cc/en/software Arduino software to download
 */
 
-
-
 /*SIMULATOR OF ARDUINO
 https://www.tinkercad.com/things/g1182wjWonM-glorious-lahdi-fulffy/editel?sharecode=UVMSzY9JRu9H5BbeCHxEMUg_qqvwE1EiqNDIq9Kh7OU
-
 */
 
 /*
@@ -38,11 +33,6 @@ https://www.youtube.com/watch?v=3596An8qDec
 
 https://www.youtube.com/watch?v=QRDKSX8ahE0&t=77s
 Почему птицу на проводе ЛЭП не бьет током? А человека будет бить?#энерголикбез
-
-
-
-
-
 
 */
 
