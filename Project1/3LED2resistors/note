@@ -1,0 +1,3 @@
+This version works with one resistor for LEDs
+the second resistor on ground to button line is neccessary for simulator only. Without ground resistor the curcuit does not work
+The second resistor connected to ground can be removed on physical board. It will work

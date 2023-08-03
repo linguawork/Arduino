@@ -33,6 +33,5 @@ https://www.youtube.com/watch?v=3596An8qDec
 
 https://www.youtube.com/watch?v=QRDKSX8ahE0&t=77s
 Почему птицу на проводе ЛЭП не бьет током? А человека будет бить?#энерголикбез
-
 */
 
