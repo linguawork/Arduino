@@ -12,6 +12,7 @@ TinkerPad:
         https://www.tinkercad.com/things/gHnnOdrHTrW-surprising-maimu-fyyran/editel?tenant=circuits
 
 
-
+Additional theoretical knowledge:
+        https://www.youtube.com/watch?v=RnXDEso-BXg
 
 */
