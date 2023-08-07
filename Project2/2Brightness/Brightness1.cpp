@@ -35,6 +35,14 @@ void loop()
   
   Value = analogRead(pot);/* getting the value of potentiometer*/ 
   LEDvalue=map(Value, 0, 1024, 0, 255); /* scalarizing the  analog values in the range of PWM*/
+  /*
+  The map() function provided by the Arduino language allows you to map that range of values to a different range.
+   Here's the function signature: int <newvalue> = map(<value>, <original_min>, <original_max>, <new_min>, <new_max>);
+    It's important to note that the function returns an integer value, the decimal part is cut.
+  
+  Resource: https://flaviocopes.com/arduino-language-map/#:~:text=The%20map()%20function%20provided,the%20decimal%20part%20is%20cut.
+  */
+
   analogWrite(led, LEDvalue); /* assigning the scalarizing values to the LED */
   
   lcd.setCursor(0,0);

@@ -1,5 +1,6 @@
 // C++ code
 // https://linuxhint.com/display-led-brightness-arduino/
+// the code is the same as in the folder 3WorkingMandat
 
 #include <LiquidCrystal.h>
 //This library is compatible with all architectures so you should be able to use it on all the Arduino boards.

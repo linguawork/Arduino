@@ -29,6 +29,7 @@ void loop()
   SwitchState = digitalRead(MandatorySwitch);
   BonusState = digitalRead(BonusSwitch);
   BonusState1 = digitalRead(BonusSwitch1);
+  
   if (SwitchState == LOW)
   {
     digitalWrite(GreenLed, HIGH);
@@ -45,6 +46,7 @@ void loop()
     digitalWrite(YellowLed, LOW);
     delay(1000);
   }
+
   if (BonusState == LOW)
   {
     digitalWrite(GreenLed, HIGH);
@@ -61,6 +63,7 @@ void loop()
     digitalWrite(YellowLed, HIGH);
     delay(2000);
   }
+
   if (BonusState1 == LOW)
   {
     digitalWrite(GreenLed, HIGH);
