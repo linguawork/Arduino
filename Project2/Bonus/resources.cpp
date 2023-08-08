@@ -54,6 +54,33 @@ https://www.youtube.com/watch?v=7aP5KL5clWA
 Arduino Tutorial 18: Reading Numbers from the Serial Monitor
 */
 
+const int ledPin = 9; // PWM pin connected to the LED
+int brightness = 100;
+
+void setup() {
+  Serial.begin(9600); // Start serial communication
+  pinMode(ledPin, OUTPUT);
+}
+
+void serialFlush()
+{
+  while(Serial.available() > 0)
+  {
+    char t = Serial.read();
+  }
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    brightness = Serial.parseInt(); // Read the integer value from Serial Monitor
+    serialFlush();
+    brightness = constrain(brightness, 0, 255); // Limit the value to 0-255
+    Serial.print("LED brightness set to: ");
+    Serial.println(brightness);
+  }
+  analogWrite(ledPin, brightness); // Set the LED brightness
+}
+
 
 
 
