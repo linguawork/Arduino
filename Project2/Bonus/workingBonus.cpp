@@ -13,7 +13,7 @@ void setup() {
 }
 
 
-//this function is used to get read of all new lines that may happen 
+//this function is used to get rid of all new lines that may happen 
 //while reading serial
 void serialFlush()
 {

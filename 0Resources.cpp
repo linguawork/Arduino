@@ -35,3 +35,8 @@ https://www.youtube.com/watch?v=QRDKSX8ahE0&t=77s
 Почему птицу на проводе ЛЭП не бьет током? А человека будет бить?#энерголикбез
 */
 
+
+/*
+LCD 16X2 explained the pins 
+https://www.elprocus.com/lcd-16x2-pin-configuration-and-its-working/
+*/

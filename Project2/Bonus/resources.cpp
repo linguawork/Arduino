@@ -55,6 +55,11 @@ Arduino Tutorial 18: Reading Numbers from the Serial Monitor
 */
 
 
+/*
+LCD 16X2 explained the pins 
+https://www.elprocus.com/lcd-16x2-pin-configuration-and-its-working/
+*/
+
 
 
 
