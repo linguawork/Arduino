@@ -40,3 +40,38 @@ https://www.youtube.com/watch?v=QRDKSX8ahE0&t=77s
 LCD 16X2 explained the pins 
 https://www.elprocus.com/lcd-16x2-pin-configuration-and-its-working/
 */
+
+
+/*
+Chat:
+
+Here's how the voltage range from 0 to 5 volts is converted to a range from 0 to 1023:
+
+Voltage Range: The maximum voltage that the ADC of most Arduino boards 
+can handle is the reference voltage. In most cases, 
+this reference voltage is 5 volts for Arduino boards that are powered with 5 volts.
+
+Resolution: The analog-to-digital converter divides 
+the reference voltage range into a certain number of discrete steps,
+ which determines the resolution of the ADC. For an Arduino ADC with 
+ a 10-bit resolution, there are 2^10 (1024) possible steps.
+
+Mapping: The analog voltage being measured is mapped 
+to the available range of digital values. In the case of a 10-bit ADC, 
+the range is divided into 1024 steps, ranging from 0 to 1023.
+
+So, when you call analogRead() on an Arduino pin, 
+the ADC measures the voltage on that pin, 
+maps it to a value between 0 and 1023 (corresponding to the full range of 0 to 5 volts), 
+and returns that value as an integer.
+
+Mathematically, the formula for converting the analog value to voltage is:
+
+Voltage = (AnalogValue * ReferenceVoltage) / MaximumDigitalValue
+
+In the case of Arduino with a 5V reference voltage and a 10-bit ADC (1024 steps),
+the formula simplifies to:
+Voltage = (AnalogValue * 5.0) / 1023.0
+
+
+*/
