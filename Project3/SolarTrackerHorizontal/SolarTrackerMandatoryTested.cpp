@@ -1,5 +1,32 @@
-//Modified during the trial:
-Serial.println(lightValLeft);//распечатка аналоговых значений
+// C++ code
+//
+
+#include <Servo.h>
+
+int currA0 = A0;
+int currA1 = A1;
+int lightValLeft;
+int lightValRight;
+
+
+Servo myservo;  // create servo object to control a servo
+// twelve servo objects can be created on most boards
+int pos = 90;    // variable to store the servo position
+  
+//настройка всех подключений
+void setup()
+{
+    pinMode(currA0, INPUT);// getting connection from the circuit into the board
+	  pinMode(currA1, INPUT);
+    Serial.begin(9600);
+    myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+}
+
+
+void loop()
+{
+	  lightValLeft = analogRead(currA0); // getting current value from pin
+    Serial.println(lightValLeft);//распечатка аналоговых значений
     lightValRight = analogRead(currA1); // getting current value from pin
     Serial.print("The left light value is: ");
     Serial.println(lightValLeft);
