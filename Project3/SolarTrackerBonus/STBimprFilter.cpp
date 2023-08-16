@@ -66,10 +66,6 @@ int calculateSmoothedAverage(int* readingsArray, int &total, int current)  {
 
 
 
-
-
-
-
 void loop()
 {
 	lightValLeft = calculateSmoothedAverage(readings, total, currA0); // getting current value from pin
@@ -134,8 +130,6 @@ void loop()
             bonusServo.write(bonusPos);
             Serial.print("Moving up: ");
             Serial.println(bonusPos);// tell servo to go to position in variable 'pos'
-            //delay(250);// waits 15ms for the servo to reach the position
-           
-      }
-  	
+            //delay(250);// waits 15ms for the servo to reach the position          
+      }	
 }
