@@ -70,11 +70,16 @@ Connecting ESP8266 to WIFI
             we’ll create separate HTML and CSS files.
 
         ESP8266 Web Server using CSS and JavaScript    
-        https://www.youtube.com/watch?v=eHxkZ7poKHc
+        https://www.youtube.com/watch?v=eHxkZ7poKHc 
+
         https://circuits4you.com/2016/12/16/esp8266-web-server-html/
         https://circuits4you.com/2016/12/16/esp8266-web-server-ap/
         
+3 Implementing LED control logic
+    This is via broker MQTT
+    https://vimalb.github.io/IoT-ESP8266-Starter/Lesson_05/lesson.html
 
-
+    This is via http requests from JS to ESP
+    https://randomnerdtutorials.com/esp8266-nodemcu-http-get-post-arduino/
 
 */
