@@ -82,4 +82,20 @@ Connecting ESP8266 to WIFI
     This is via http requests from JS to ESP
     https://randomnerdtutorials.com/esp8266-nodemcu-http-get-post-arduino/
 
-*/
+    https://www.youtube.com/watch?v=hP3xQtrRMmQ
+
+    https://forum.arduino.cc/t/send-post-request-to-arduino-on-button-event-in-javascript/468581/3
+
+
+    http codes
+    https://umbraco.com/knowledge-base/http-status-codes/#:~:text=The%20200%20OK%20status%20code,in%20without%20the%20message%20body.
+
+
+    ESP8266 Display JPEGs On NeoPixel Matrix | Drag and Drop To SPIFFS
+    https://www.youtube.com/watch?v=u_C7robY118
+
+    https://iot4beginners.com/arduino-webserver-using-esp8266-nodemcu/
+
+
+*/  
+
