@@ -19,6 +19,8 @@ const char* password = "WiFiPassword";
 
 ESP8266WebServer server(80); // HTTP server port
 
+
+
 void handleRoot() {
   String html = "<html><body>";
   for (int i = 0; i < 64; i++) {
@@ -58,19 +60,37 @@ void setup() {
 
   Serial.println("Connected to WiFi");
 
-  // Serve static files
-  server.serveStatic("/", SPIFFS, "/index.html");
+   // Print wifi IP addess
+  Serial.println("IP to connect: " + WiFi.localIP().toString());
 
 
-  server.on("/", handleRoot);
-  server.on("/led", handleLedControl);
 
-  server.begin();
 
-    if (!SPIFFS.begin()) {
-    Serial.println("Failed to mount file system");
-    return;
-  }
+    SPIFFS.begin();
+      if (!SPIFFS.begin()) {
+      Serial.println("Failed to mount file system");
+      return;
+    }
+
+    //checking uploaded files
+    Serial.println("SPIFFS files:");
+    Dir dir = SPIFFS.openDir("/");
+    while (dir.next()) {
+      Serial.println(dir.fileName());
+    }  
+
+
+      // Serve static files
+      server.serveStatic("/", SPIFFS, "/index.html");
+
+
+
+      server.on("/", handleRoot);
+      server.on("/led", handleLedControl);
+
+      server.begin();
+
+
 
 
 }

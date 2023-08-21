@@ -96,11 +96,11 @@ void setup() {
   /*
   In the context of programming for the ESP8266 using the Arduino core and the ESP8266WebServer library, server.begin() is a function that initializes and starts the web server.
 
-Here's what server.begin() does:
+  Here's what server.begin() does:
 
-Initialization: The server.begin() function initializes the web server instance you've created using the ESP8266WebServer class. This prepares the server to start listening for incoming HTTP requests.
+  Initialization: The server.begin() function initializes the web server instance you've created using the ESP8266WebServer class. This prepares the server to start listening for incoming HTTP requests.
 
-Starting the Server: After initializing the server, the begin() function starts the server and makes it ready to handle incoming HTTP requests.
+  Starting the Server: After initializing the server, the begin() function starts the server and makes it ready to handle incoming HTTP requests.
   
   */
 }
