@@ -19,8 +19,6 @@ const char* password = "0nly5ky15theL1m17";
 
 ESP8266WebServer server(80); // HTTP server port
 
-
-
 void handleRoot() {
   String html = "<html><body>";
   for (int i = 0; i < 64; i++) {
@@ -65,42 +63,13 @@ void setup() {
     Serial.println("IP address: ");
     Serial.println(WiFi.localIP());
 
-<<<<<<< HEAD
-   // Print wifi IP addess
-  Serial.println("IP to connect: " + WiFi.localIP().toString());
-
-
-
-=======
    
  
->>>>>>> 4114ccdd85e8c774984fa6a63997b4fdd6c2cb37
 
-    SPIFFS.begin();
-      if (!SPIFFS.begin()) {
-      Serial.println("Failed to mount file system");
-      return;
-    }
-
-    //checking uploaded files
-    Serial.println("SPIFFS files:");
-    Dir dir = SPIFFS.openDir("/");
-    while (dir.next()) {
-      Serial.println(dir.fileName());
-    }  
-
-
-      // Serve static files
-      server.serveStatic("/", SPIFFS, "/index.html");
-
-
-
-      server.on("/", handleRoot);
-      server.on("/led", handleLedControl);
-
-      server.begin();
-
-
+    if (!SPIFFS.begin()) {
+    Serial.println("Failed to mount file system");
+    return;
+  }
 
   // Serve static files
   server.serveStatic("/", SPIFFS, "/index.html");

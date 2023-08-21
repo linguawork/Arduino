@@ -11,15 +11,13 @@ Please note that the SPIFFS file system has limited space, so if your HTML file 
 */
 
 
-const int ledPin = D7;  // ESP8266 pin for controlling LED
+const int ledPin = D2;  // ESP8266 pin for controlling LED
 
 // Setting wifi
-const char* ssid = "42Wolfsburg_FabLab";
-const char* password = "0nly5ky15theL1m17";
+const char* ssid = "WifiLogin";
+const char* password = "WiFiPassword";
 
 ESP8266WebServer server(80); // HTTP server port
-
-
 
 void handleRoot() {
   String html = "<html><body>";
@@ -51,7 +49,6 @@ void setup() {
   digitalWrite(ledPin, LOW);
 
   Serial.begin(115200);
-   SPIFFS.begin();
   WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED) {
@@ -60,61 +57,21 @@ void setup() {
   }
 
   Serial.println("Connected to WiFi");
- 
-  // Print wifi IP addess
-    Serial.println("IP address: ");
-    Serial.println(WiFi.localIP());
-
-<<<<<<< HEAD
-   // Print wifi IP addess
-  Serial.println("IP to connect: " + WiFi.localIP().toString());
-
-
-
-=======
-   
- 
->>>>>>> 4114ccdd85e8c774984fa6a63997b4fdd6c2cb37
-
-    SPIFFS.begin();
-      if (!SPIFFS.begin()) {
-      Serial.println("Failed to mount file system");
-      return;
-    }
-
-    //checking uploaded files
-    Serial.println("SPIFFS files:");
-    Dir dir = SPIFFS.openDir("/");
-    while (dir.next()) {
-      Serial.println(dir.fileName());
-    }  
-
-
-      // Serve static files
-      server.serveStatic("/", SPIFFS, "/index.html");
-
-
-
-      server.on("/", handleRoot);
-      server.on("/led", handleLedControl);
-
-      server.begin();
-
-
 
   // Serve static files
   server.serveStatic("/", SPIFFS, "/index.html");
 
 
-//  server.on("/", handleRoot);
-//  server.on("/", handleLedControl);
-//
-//  server.serveStatic("/", SPIFFS, "/index.html");
-server.on("/", HTTP_GET, handleRoot);
-server.on("/led", HTTP_GET, handleLedControl);
+  server.on("/", handleRoot);
+  server.on("/led", handleLedControl);
 
+  server.begin();
 
-server.begin();
+    if (!SPIFFS.begin()) {
+    Serial.println("Failed to mount file system");
+    return;
+  }
+
 
 }
 

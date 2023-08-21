@@ -97,7 +97,9 @@ Connecting ESP8266 to WIFI
     ESP8266 Display JPEGs On NeoPixel Matrix | Drag and Drop To SPIFFS
     https://www.youtube.com/watch?v=u_C7robY118
 
-    https://iot4beginners.com/arduino-webserver-using-esp8266-nodemcu/
+    https://iot4beginners.com/arduino-webserver-using-esp8266-nodemcu/ 
+
+    https://randomnerdtutorials.com/install-esp8266-filesystem-uploader-arduino-ide/
 
 
 */  
