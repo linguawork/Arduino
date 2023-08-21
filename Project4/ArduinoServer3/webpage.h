@@ -1,3 +1,7 @@
+#ifndef WEBPAGE_H
+#define WEBPAGE_H
+
+const char WEBPAGE_HTML[] PROGMEM = R"=====(
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -87,7 +91,8 @@
 
         <script>
             function sendRequest(ledNumber) {
-                const action = 'toggle'; // Use 'toggle' to switch between on and off       
+                const action = 'toggle'; // Use 'toggle' to switch between on and off
+        
                 fetch(`/led?led=${ledNumber}&action=${action}`)
                     .then(response => response.text())
                     .then(data => console.log(data))
@@ -98,3 +103,6 @@
 
     </body>
 </html>
+)=====";
+
+#endif
