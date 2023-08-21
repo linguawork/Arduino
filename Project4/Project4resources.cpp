@@ -61,6 +61,9 @@ Connecting ESP8266 to WIFI
 
 1 Wiring ESP8266 to WS2812 8X8 LED matrix
     https://www.youtube.com/shorts/YpMSHVJ6Xks
+    
+    How to use WS2812 8x8 LED matrix with Arduino and FastLED library
+    https://www.youtube.com/watch?v=kBXYnpznscc&list=PLYlfM6qKBI5i4F9IQcpdoO1mvjw7GqS-A&index=16
 
 2 How to upload a web site to ESP8266 Web server 
         https://randomnerdtutorials.com/esp8266-web-server-spiffs-nodemcu/
