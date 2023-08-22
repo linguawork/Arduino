@@ -104,3 +104,15 @@ Connecting ESP8266 to WIFI
 
 */  
 
+
+/*
+
+Arduino bonus: 
+https://www.youtube.com/shorts/OLBCztqcW3I
+
+https://circuitdigest.com/microcontroller-projects/interfacing-sound-sensor-with-arduino
+
+https://www.youtube.com/@electronicsbysagar 
+
+*/
+
