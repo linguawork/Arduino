@@ -6,3 +6,7 @@ inside are the links to simulator, to video courses
 The repo has folders for every project and files with url links to introductory educational videos, a book with projects.
 Inside the project folders there are folders of a project which has a slightly different version.
 Every project version has the code in cpp and the picture of wiring the boards.
+
+I would like to thank the contributors to the project. 
+That was a team project and I was happy to work with https://github.com/Arpit-42WOB
+and Emil Emirzaza (I will give the link to his account later)
